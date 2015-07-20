@@ -1,0 +1,9 @@
+node_modules
+.idea
+.DS_Store
+config.json
+Thumb.db
+conf/private.js
+tmp
+appdata
+npm-debug.log
