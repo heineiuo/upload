@@ -2,8 +2,8 @@
  * Created by Hansel on 15/5/22.
  */
 
-
-var app = require(require('path').join(__dirname, './app/index'))({
-  "port": 8653,
-  "name": "env-001"
+var path = require('path')
+var app = require(path.join(__dirname, './src/index'))({
+  "port": 8222,
+  "name": "Upload"
 })

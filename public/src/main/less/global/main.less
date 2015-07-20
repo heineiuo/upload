@@ -1,0 +1,324 @@
+
+
+
+.main {
+
+
+  .main-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    .bg-white;
+  }
+
+
+  .header {
+    z-index: 99999;
+    height: 50px;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.6);
+    // border-bottom: 1px solid #EDEDED;
+
+    .tabbar,.actionbar,.logobar,.searchbar {
+      float: left;
+      height: @header-height;
+    }
+
+    .logobar {
+      width: 150px;
+
+      .logo {
+        width: 136px;
+        height: 30px;
+        padding-top: 10px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .logo-title {
+
+          line-height: 35px;
+          font-size: 25px;
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 40px;
+          color: @color_yellow;
+          height: 30px;
+        }
+      }
+    }
+
+    .searchbar {
+      width: 450px;
+
+      input {
+        width: 420px - 12px; 
+        border: 1px solid #E4E4E4;
+        height: @header-height - 30px; // 实际高度 32
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+
+      input:focus {
+        border-color: @color_yellow;
+      }
+
+      button {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        left: 420px - 28px - 4px;
+        color: #BBB;
+        top: 12px;
+        background-color: transparent;
+
+      }
+    }
+
+
+
+
+    .userbar {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 50px;
+    }
+
+    .links li {
+      float: left;
+    }
+
+    .navbar {
+      max-width: 1215px;
+      margin: 0 auto;
+      height: 50px;
+    }
+
+
+
+    .header-wrap {
+      width: 100%;
+      max-width: @wrap-width;
+      margin: 0 auto;
+    }
+
+    .tabbar .tabs {
+
+      .tab {
+        color: #737373;
+        font-size: 14px;
+
+        float: left;
+        
+        line-height: @header-height;
+        text-align: center;
+        padding: 0 10px;
+
+        i {
+          display: none;
+        }
+      }
+
+      .tab-me {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tab.open {
+        color: @color_yellow;
+      }
+    }
+
+
+    .navbar {
+      display: none;
+      
+      .title {
+        text-align: center;
+        line-height: @header-height;
+        font-size: 20px;
+        color: #373737;
+      }
+    }
+
+
+    .actionbar {
+      position: absolute;
+      right: 0;
+      height: 32px;
+      top: 10px;
+
+
+      .action {
+        float: left;
+        width: 32px;
+        height: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin-left: 10px;
+
+        i {
+          font-size: 20px;
+        }
+
+        button {
+          background-color: transparent;
+        }
+
+        .menu {
+          display: none;
+          width: 160px;
+          left: -60px;
+          top: 30px;
+          text-align: left;
+          position: absolute;
+          border: 1px solid #DDD;
+          background-color: #FFF;
+          padding: 10px 0;
+          border-radius: 3px;
+          box-shadow: 0 2px 2px #eee;
+
+          .menu-inner {
+
+          }
+
+          a {
+            color: #666;
+            display: block;
+            padding: 0 10px;
+            font-size: 14px;
+          }
+
+          a:hover {
+            background-color: #EEE;
+          }
+
+        }
+
+      }
+
+      .open {
+        
+        .menu {
+          display: block;
+        }
+
+      }      
+
+      .action-me {
+        border-radius: 100px;
+
+        button {
+          padding: 0;
+        }
+
+        .avatar-unlogged {
+          display: none;
+          background-color: #DDD;
+          width: 32px;
+          height: 32px;
+          border-radius: 100px;
+        }
+
+        .avatar {
+          display: block;
+          width: 32px;
+          height: 32px;
+
+          img {
+            border-radius: 100px;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+        }
+      }
+
+      .unlogged {
+
+        .avatar-unlogged {
+          display: block;
+        }
+
+        .avatar {
+          display: none;
+        }
+      }
+
+
+    }
+
+
+
+
+  }
+
+}
+
+
+/**
+ * 手机版
+ */
+
+.small .main .tabbar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: @header-height;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.small .main .tabbar .tabs .tab {
+  position: relative;
+  width: 25%;
+  font-size: 12px;
+  line-height: 85px;
+  color: #888;
+  padding: 0;
+}
+
+.small .main .tabbar .tabs .tab.open {
+  color: @tabbar_tabcolor;
+}
+
+.small .main .tabbar .tabs .tab i {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.small .main .navbar {
+  display: block;
+}
+
+.small .main .actionbar {
+  display: none;
+}
+
+
+
+
+/**
+ * content
+ */
+
+.main .content {
+  padding: 20px 0 50px;
+}
+

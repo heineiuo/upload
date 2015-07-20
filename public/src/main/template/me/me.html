@@ -1,0 +1,119 @@
+<div class="me">
+
+  <div class="section-small">
+
+    <div class="line">
+      <a class="link" href="/logout">退出登录状态</a>
+    </div>
+
+  </div>
+
+
+  <div class="profile section-small" data-form="profile">
+
+    <div class="line">
+      <h6>昵称</h6>
+      <div class="edit-inputbar">
+        <input type="text" class="nickname input-text" name="nickname" placeholder="昵称，8-16个字符">
+      </div>
+    </div>
+
+    <div class="line line-gender">
+      <h6>性别</h6>
+      
+      <div class="edit-inputbar">
+        <label>
+          <input type="radio" class="input-radio" value="1"><span>男</span>
+        </label>
+        <label>
+          <input type="radio" class="input-radio" value="2"><span>女</span>
+        </label>
+
+        <input type="hidden" class="value-gender needvali" name="gender" data-type="gender">
+      </div>
+
+    </div>
+
+    <div class="line">
+      <h6>生日</h6>
+
+      <div class="date-picker"></div>
+      <input type="hidden" name="birthday">
+
+    </div>
+
+    <div class="line">
+      <h6>地址</h6>
+      <div>
+        <input type="text" name="address" class="input-text needvali" data-type="address" placeholder="选填，最多200个字符">
+      </div>
+    </div>
+
+
+    <div class="line">
+      <h6>电话</h6>
+      <div class="">
+        <input type="text" class="input-text" placeholder="选填">
+      </div>
+      <input type="hidden" name="phone" class="input-text needvali" data-type="phone">
+
+    </div>
+
+    <div class="line">
+      <h6>电子邮件</h6>
+      <div>
+        <input type="text" placeholder="选填" name="email" data-type="email" class="input-text needvali">
+      </div>
+    </div>
+
+
+    <!-- SAVE or CANCLE -->
+
+    <div class="line">
+        
+      <div class="edit">
+        <div class="edit-sbbar">
+          <input type="hidden" name="isChanged">
+          <button class="edit-save">保存</button>
+          <button class="edit-cancel">取消</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END basic info -->
+
+
+
+
+  <div class="privacy section-small" data-form="privacy">
+
+    <div class="line">
+      <h6>能否被搜索到</h6>
+    </div>
+
+    <div class="line">
+      <h6>黑名单列表</h6>
+    </div>
+
+    <!-- SAVE or CANCLE -->
+
+    <div class="line">
+        
+      <div class="edit">
+        <div class="edit-sbbar">
+          <input type="hidden" name="isChanged">
+          <button class="edit-save">保存</button>
+          <button class="edit-cancel">取消</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END privacy -->
+
+
+
+</div>
