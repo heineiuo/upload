@@ -18,8 +18,12 @@ exports.renderIndex = function(req, res){
     ],
     lang: 'zh-CN',
     title: "Smile",
-    css: ['/assets/main/index.css'],
-    js: ['/assets/main/vendor.js','/assets/main/template.js', '/assets/main/index.js'],
+    css: ['//assets1.heineiuo.com/upload/main/index.css'],
+    js: [
+      '//assets1.heineiuo.com/upload/main/vendor.js',
+      '//assets1.heineiuo.com/upload/main/template.js',
+      '//assets1.heineiuo.com/upload/main/index.js'
+    ],
     body: {
       id: "view-scope"
     }

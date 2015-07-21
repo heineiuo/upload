@@ -76,12 +76,6 @@ module.exports = function (options){
   }
 
   /**
-   * Output static files if requested.
-   */
-  app.use('/media/', express.static(settings.dir.media))
-  app.use('/', express.static(settings.dir.public))
-
-  /**
    * Route not found or unexpected err.
    */
   app.use(error500Handle)

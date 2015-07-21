@@ -59,6 +59,6 @@
     "request": "2.55.0",
     "object-extend": "0.5.0",
     "chalk": "latest",
-    "express-res-html": "0.2.0"
+    "express-res-html": "latest"
   }
 }
